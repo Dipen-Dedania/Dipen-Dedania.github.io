@@ -21,29 +21,39 @@
                 <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
                     {% endif %}
                     <div class="team-member">
+                        {% assign project_link = project.url %}
+                        {% assign github_repo = project.github_repo %}
+                        {% unless project_link contains 'http' %}
+                          {% assign project_link = project.url | prepend: 'https://github.com' %}
+                          {% unless github_repo %}
+                            {% assign github_repo = project.url %}
+                          {% endunless %}
+                        {% endunless %}
                         <img src="{{ project.img | prepend: site.baseurl }}"
                              class="img-responsive img-circle align-center" alt="">
-                        <h5><a href="{{ project.url | prepend: 'https://github.com' }}" target="blank"><span
+                        <h5><a href="{{ project_link }}" target="_blank" rel="noopener noreferrer"><span
                                 class="navy">{{ project.name }}</span></a></h5>
                         <p class="small text-muted"><span
                                 data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
+                        {% if github_repo %}
                         <ul class="list-inline">
                             <li>
-                                <a class="github-button" href="{{ project.url | prepend: 'https://github.com'}}"
-                                   data-icon="octicon-star" data-count-href="{{ project.url | append: '/stargazers' }}"
-                                   data-count-api="{{ project.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                                <a class="github-button" href="{{ github_repo | prepend: 'https://github.com'}}"
+                                   data-icon="octicon-star" data-count-href="{{ github_repo | append: '/stargazers' }}"
+                                   data-count-api="{{ github_repo | prepend: '/repos' | append: '#stargazers_count' }}"
                                    data-count-aria-label="# stargazers on GitHub"
                                    aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
                             </li>
                             <li>
-                                <a class="github-button" href="{{ project.url | prepend: 'h ttps://github.com'}}"
+                                <a class="github-button" href="{{ github_repo | prepend: 'https://github.com'}}"
                                    data-icon="octicon-fork"
-                                   data-count-href="{{ project.url | append: '/network/members' }}"
-                                   data-count-api="{{ project.url | prepend: '/repos' | append: '#forks_count' }}"
+                                   data-count-href="{{ github_repo | append: '/network/members' }}"
+                                   data-count-api="{{ github_repo | prepend: '/repos' | append: '#forks_count' }}"
                                    data-count-aria-label="# forks on GitHub"
                                    aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
                             </li>
                         </ul>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
@@ -51,5 +61,4 @@
         </div>
     </div>
 </div>
-
 
