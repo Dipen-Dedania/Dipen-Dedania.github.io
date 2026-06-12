@@ -12,18 +12,24 @@
   img: 'assets/img/profile/ifttt.png'
   desc: 'ifttt boilerplate with NodeJS & Express'
 
+- name: 'Purple Photo'
+  i18n: 'Purple Photo'
+  url: 'https://purple-photo.web.app/'
+  img: 'assets/img/profile/purple-photo.png'
+  desc: 'A private photo web app with a polished gallery experience.'
+
+- name: 'IPO Master'
+  i18n: 'IPO Master'
+  url: 'https://ipo-master.vercel.app/'
+  img: 'assets/img/profile/ipo-master.png'
+  desc: 'A comprehensive IPO tracking app with real-time updates and detailed analytics.'
+
 - name: 'Agent Pulse'
   i18n: 'Agent Pulse'
   url: 'https://dipen-dedania.github.io/agent-pulse/'
   github_repo: '/Dipen-Dedania/agent-pulse'
   img: 'assets/img/profile/agent-pulse.png'
   desc: 'A portfolio project showcasing Agent Pulse with a live preview and GitHub source.'
-
-- name: 'Purple Photo'
-  i18n: 'Purple Photo'
-  url: 'https://purple-photo.web.app/'
-  img: 'assets/img/profile/purple-photo.png'
-  desc: 'A private photo web app with a polished gallery experience.'
 
 - name: 'Tensorflow Playground'
   i18n: 'Tensorflow Playground'
