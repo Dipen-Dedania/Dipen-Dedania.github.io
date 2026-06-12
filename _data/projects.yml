@@ -4,13 +4,26 @@
   github_repo: '/Dipen-Dedania/mr-emoji'
   img: 'assets/img/profile/npm.png'
   desc: 'Lightweight emoji picker like SLACK'
-  
+
 - name: 'IFTTT Boilerplate'
   i18n: 'IFTTT Boilerplate'
   url: '/Dipen-Dedania/ifttt-boilerplate'
   github_repo: '/Dipen-Dedania/ifttt-boilerplate'
   img: 'assets/img/profile/ifttt.png'
   desc: 'ifttt boilerplate with NodeJS & Express'
+
+- name: 'Agent Pulse'
+  i18n: 'Agent Pulse'
+  url: 'https://dipen-dedania.github.io/agent-pulse/'
+  github_repo: '/Dipen-Dedania/agent-pulse'
+  img: 'assets/img/profile/agent-pulse.png'
+  desc: 'A portfolio project showcasing Agent Pulse with a live preview and GitHub source.'
+
+- name: 'Purple Photo'
+  i18n: 'Purple Photo'
+  url: 'https://purple-photo.web.app/'
+  img: 'assets/img/profile/purple-photo.png'
+  desc: 'A private photo web app with a polished gallery experience.'
 
 - name: 'Tensorflow Playground'
   i18n: 'Tensorflow Playground'
@@ -33,22 +46,9 @@
   img: 'assets/img/profile/dotnet.png'
   desc: 'Enterprise application sample with .Net'
 
-- name: 'ReactJS Samples'
-  i18n: 'ReactJS Samples'
-  url: '/Dipen-Dedania/react-js'
-  github_repo: '/Dipen-Dedania/react-js'
-  img: 'assets/img/profile/reactjs.png'
-  desc: 'Learn ReactJs with samples'
-
 - name: 'Awesome GitHub Profile Website'
   i18n: 'Awesome GitHub Profile Website'
   url: 'https://dipen-dedania.github.io/awesome-github-profile-website'
   github_repo: '/Dipen-Dedania/awesome-github-profile-website'
-  img: 'assets/img/profile/jekyll.png'
+  img: 'assets/img/profile/git-profiles.png'
   desc: 'A customizable profile website focused on clean GitHub presence.'
-
-- name: 'Purple Photo'
-  i18n: 'Purple Photo'
-  url: 'https://purple-photo.web.app/'
-  img: 'assets/img/profile/reactjs.png'
-  desc: 'A private photo web app with a polished gallery experience.'

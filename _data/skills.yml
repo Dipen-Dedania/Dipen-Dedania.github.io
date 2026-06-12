@@ -1,6 +1,9 @@
 - name: ReactJS
   percentage: 80
 
+- name: Vibe Coding
+  percentage: 80
+
 - name: Python
   percentage: 75
 
@@ -9,6 +12,6 @@
 
 - name: NodeJS
   percentage: 75
-  
+
 - name: .Net
   percentage: 75
